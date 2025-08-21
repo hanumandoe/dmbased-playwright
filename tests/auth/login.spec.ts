@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 // Replace with your actual credentials
-const EMAIL = 'admin-josel@example.com';
-const PASSWORD = 'admin';
+const EMAIL=process.env.EMAIL || '';
+const PASSWORD=process.env.PASSWORD || '';
 
 // The login test
 

@@ -1,5 +1,7 @@
 import { defineConfig } from '@playwright/test';
+import dotenv from 'dotenv';
 
+dotenv.config();
 export default defineConfig({
   testDir: './tests',
   timeout: 30_000,
@@ -19,4 +21,5 @@ export default defineConfig({
     // actionTimeout: 0,
     // trace: 'on-first-retry',
   },
+
 });
